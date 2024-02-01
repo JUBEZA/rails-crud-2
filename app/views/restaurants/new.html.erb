@@ -1,11 +1,5 @@
 <h1>Create a new Restaurant  🦑</h1>
 
-<%= form_with model: @restaurant do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
-  <%= f.label :address %>
-  <%= f.text_field :address %>
-  <%= f.label :rating %>
-  <%= f.number_field :rating %>
-  <%= f.submit %>
-<% end %>
+
+
+<%= render "form", restaurant: @restaurant %>
