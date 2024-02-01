@@ -9,5 +9,6 @@ Rails.application.routes.draw do
   get "restaurants/:id", to: "restaurants#show", as: :restaurant
   get "restaurants/:id/edit", to: "restaurants#edit"
   patch "restaurants/:id", to: "restaurants#update"
+  delete "restaurants/:id", to: "restaurants#destroy"
 
 end
