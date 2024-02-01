@@ -2,6 +2,9 @@
 <p><%= @restaurant.location %></p>
 <p><%= "⭐️" * @restaurant.rating %></p>
 
+<%# para hacer que me muestre un restaurante especifico %>
+<%= link_to 'Back to All Restaurants', restaurants_path %>
+
 <%# delete button %>
 <%= link_to "Delete",
   restaurant_path(@restaurant),
